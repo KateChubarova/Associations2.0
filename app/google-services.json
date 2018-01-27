@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "72024004106",
+    "firebase_url": "https://associations20.firebaseio.com",
+    "project_id": "associations20",
+    "storage_bucket": "associations20.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:72024004106:android:f9347b7218b7a23a",
+        "android_client_info": {
+          "package_name": "com.crocodile.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "72024004106-lsbqsi91tvm9ukuj7394prrioje27i5c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.crocodile.myapplication",
+            "certificate_hash": "9679c0565c70c0b5ceef702632212a669fd30038"
+          }
+        },
+        {
+          "client_id": "72024004106-clb7e2cjhca6rs4lgv1m97k05u54714t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC7JsfGYVj7Iteh07ob-HtQaNKgRvyk8Vs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "72024004106-clb7e2cjhca6rs4lgv1m97k05u54714t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

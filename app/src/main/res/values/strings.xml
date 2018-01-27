@@ -1,0 +1,46 @@
+<resources>
+
+    <string name="app_name">Associations</string>
+
+    <string name="head">fonts/head.ttf</string>
+    <string name="roboto_head">fonts/aavantelt_light.ttf</string>
+
+    <string name="associations">Associations</string>
+
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="exit">Exit: Are you sure?</string>
+    <string name="game_rules_title">Game rules</string>
+    <string name="game_rules">At the beginning of the game you have 35 coins. The game consists of 25 levels, on each level you will have to guess country by the pictures. On each level you can unlock 6 pictures. To unlock one picture you should to pay 1 coin. Completing each level gives you 2 coins.</string>
+
+    <string name="choose_level">Choose level</string>
+    <string name="new_game_question">Do you want to start new game?</string>
+    <string name="new_game">New game</string>
+
+    <string name="india">India</string>
+    <string name="france">France</string>
+    <string name="japan">Japan</string>
+    <string name="spain">Spain</string>
+    <string name="germany">Germany</string>
+    <string name="hawaii">Hawaii</string>
+    <string name="israel">Israel</string>
+    <string name="latvia">Latvia</string>
+    <string name="turkey">Turkey</string>
+    <string name="greece">Greece</string>
+    <string name="netherlands">Netherlands</string>
+    <string name="italy">Italy</string>
+    <string name="mexico">Mexico</string>
+    <string name="moldova">Moldova</string>
+    <string name="slovakia">Slovakia</string>
+    <string name="hungary">Hungary</string>
+    <string name="lithuania">Lithuania</string>
+    <string name="portugal">Portugal</string>
+    <string name="malta">Malta</string>
+    <string name="poland">Poland</string>
+    <string name="slovenia">Slovenia</string>
+    <string name="romania">Romania</string>
+    <string name="ireland">Ireland</string>
+    <string name="sweden">Sweden</string>
+    <string name="luxembourg">Luxembourg</string>
+
+</resources>

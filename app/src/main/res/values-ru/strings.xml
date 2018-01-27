@@ -1,0 +1,44 @@
+<resources>
+
+    <string name="app_name">Associations</string>
+
+    <string name="head">fonts/head.ttf</string>
+    <string name="roboto_head">fonts/aavantelt_light.ttf</string>
+
+    <string name="no">Да</string>
+    <string name="yes">Нет</string>
+    <string name="exit">Выход: Вы уверены?</string>
+    <string name="game_rules_title">Правила игры</string>
+    <string name="game_rules">В начале игры Вам начисляется 35 монет. Игра состоит из 25 уровней, в каждом из которых Вам предстоит угадать страну по картинкам. На каждом уровне Вы можете открыть 6 картинок. За открытие одной у Вас отнимается 1 монета. За прохождение каждого уровня начисляются 2 монеты. Если у Вас закончились монеты, то Вы можете открыть картинку, просмотрев рекламу.</string>
+
+    <string name="choose_level">Выберете уровень</string>
+    <string name="new_game_question">Вы хотите начать новую игру?</string>
+    <string name="new_game">Новая игра</string>
+
+    <string name="india">Индия</string>
+    <string name="france">Франция</string>
+    <string name="japan">Япония</string>
+    <string name="spain">Испания</string>
+    <string name="germany">Германия</string>
+    <string name="hawaii">Гавайи</string>
+    <string name="israel">Израиль</string>
+    <string name="latvia">Латвия</string>
+    <string name="turkey">Турция</string>
+    <string name="greece">Греция</string>
+    <string name="netherlands">Нидерланды</string>
+    <string name="italy">Италия</string>
+    <string name="mexico">Мексика</string>
+    <string name="moldova">Молдова</string>
+    <string name="slovakia">Словакия</string>
+    <string name="hungary">Венгрия</string>
+    <string name="lithuania">Литва</string>
+    <string name="portugal">Португалия</string>
+    <string name="malta">Мальта</string>
+    <string name="poland">Польша</string>
+    <string name="slovenia">Словения</string>
+    <string name="romania">Румыния</string>
+    <string name="ireland">Ирландия</string>
+    <string name="sweden">Швеция</string>
+    <string name="luxembourg">Люксембург</string>
+
+</resources>

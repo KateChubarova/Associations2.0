@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:id="@+id/replay"
+            android:background="@drawable/ic_replaybutton"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/choose_level"
+            android:id="@+id/choose_level"
+            android:typeface="normal"
+            android:textColor="#541a5b"
+            android:textSize="32sp"
+            android:layout_gravity="left|center"
+            android:layout_marginLeft="25dp" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginRight="7dp"
+        android:layout_marginLeft="7dp">
+
+        <com.crocodile.myapplication.LevelButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="1"
+            android:padding="8dp"
+            android:id="@+id/button1"
+            android:background="@drawable/levelunlocked"
+            android:textColor="@android:color/white"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:layout_margin="5dp" />
+
+        <com.crocodile.myapplication.LevelButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="2"
+            android:padding="8dp"
+            android:id="@+id/button2"
+            android:background="@drawable/levellocked"
+            android:textColor="@android:color/white"
+            android:textAlignment="center"
+            android:textSize="30dp"
+            android:layout_margin="5dp" />
+
+        <com.crocodile.myapplication.LevelButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:text="3"
+            android:id="@+id/button3"
+            android:background="@drawable/levellocked"
+            android:textColor="@android:color/white"
+            android:textAlignment="center"
+            android:textSize="30dp"
+            android:layout_margin="5dp" />
+
+        <com.crocodile.myapplication.LevelButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:text="4"
+            android:id="@+id/button4"
+            android:background="@drawable/levellocked"
+            android:textColor="@android:color/white"
+            android:textAlignment="center"
+            android:textSize="30dp"
+            android:layout_margin="5dp" />
+
+        <com.crocodile.myapplication.LevelButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="5"
+            android:id="@+id/button5"
+            android:background="@drawable/levellocked"
+            android:textColor="@android:color/white"
+            android:textAlignment="center"
+            android:textSize="30dp"
+            android:padding="8dp"
+            android:layout_margin="5dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginRight="7dp"
+        android:layout_marginLeft="7dp">
+
+        <com.crocodile.myapplication.LevelButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="6"
+            android:padding="8dp"
+            android:id="@+id/button6"
+            android:background="@drawable/levellocked"
+            android:textColor="@android:color/white"
+            android:textAlignment="center"
+            android:textSize="30dp"
+            android:layout_margin="5dp" />
+
+        <com.crocodile.myapplication.LevelButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="7"
+            android:padding="8dp"
+            android:id="@+id/button7"
+            android:background="@drawable/levellocked"
+            android:textColor="@android:color/white"
+            android:textAlignment="center"
+            android:textSize="30dp"
+            android:layout_margin="5dp" />
+
+        <com.crocodile.myapplication.LevelButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="8"
+            android:padding="8dp"
+            android:id="@+id/button8"
+            android:background="@drawable/levellocked"
+            android:textColor="@android:color/white"
+            android:textAlignment="center"
+            android:textSize="30dp"
+            android:layout_margin="5dp" />
+
+        <com.crocodile.myapplication.LevelButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="9"
+            android:padding="8dp"
+            android:id="@+id/button9"
+            android:background="@drawable/levellocked"
+            android:textColor="@android:color/white"
+            android:textAlignment="center"
+            android:textSize="30dp"
+            android:layout_margin="5dp" />
+
+        <com.crocodile.myapplication.LevelButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="10"
+            android:padding="8dp"
+            android:id="@+id/button10"
+            android:background="@drawable/levellocked"
+            android:textColor="@android:color/white"
+            android:textAlignment="center"
+            android:textSize="30dp"
+            android:layout_margin="5dp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginRight="7dp"
+        android:layout_marginLeft="7dp">
+
+        <com.crocodile.myapplication.LevelButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="11"
+            android:padding="8dp"
+            android:id="@+id/button11"
+            android:background="@drawable/levellocked"
+            android:textColor="@android:color/white"
+            android:textAlignment="center"
+            android:textSize="30dp"
+            android:layout_margin="5dp" />
+
+        <com.crocodile.myapplication.LevelButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="12"
+            android:padding="8dp"
+            android:id="@+id/button12"
+            android:background="@drawable/levellocked"
+            android:textColor="@android:color/white"
+            android:textAlignment="center"
+            android:textSize="30dp"
+            android:layout_margin="5dp" />
+
+        <com.crocodile.myapplication.LevelButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="13"
+            android:padding="8dp"
+            android:id="@+id/button13"
+            android:background="@drawable/levellocked"
+            android:textColor="@android:color/white"
+            android:textAlignment="center"
+            android:textSize="30dp"
+            android:layout_margin="5dp" />
+
+        <com.crocodile.myapplication.LevelButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="14"
+            android:padding="8dp"
+            android:id="@+id/button14"
+            android:background="@drawable/levellocked"
+            android:textColor="@android:color/white"
+            android:textAlignment="center"
+            android:textSize="30dp"
+            android:layout_margin="5dp" />
+
+        <com.crocodile.myapplication.LevelButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="15"
+            android:padding="8dp"
+            android:id="@+id/button15"
+            android:background="@drawable/levellocked"
+            android:textColor="@android:color/white"
+            android:textAlignment="center"
+            android:textSize="30dp"
+            android:layout_margin="5dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginRight="7dp"
+        android:layout_marginLeft="7dp">
+
+        <com.crocodile.myapplication.LevelButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="16"
+            android:padding="8dp"
+            android:id="@+id/button16"
+            android:background="@drawable/levellocked"
+            android:textColor="@android:color/white"
+            android:textAlignment="center"
+            android:textSize="30dp"
+            android:layout_margin="5dp" />
+
+        <com.crocodile.myapplication.LevelButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="17"
+            android:id="@+id/button17"
+            android:background="@drawable/levellocked"
+            android:textColor="@android:color/white"
+            android:textAlignment="center"
+            android:textSize="30dp"
+            android:layout_margin="5dp" />
+
+        <com.crocodile.myapplication.LevelButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="18"
+            android:id="@+id/button18"
+            android:background="@drawable/levellocked"
+            android:textColor="@android:color/white"
+            android:textAlignment="center"
+            android:textSize="30dp"
+            android:padding="8dp"
+            android:layout_margin="5dp" />
+
+        <com.crocodile.myapplication.LevelButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="19"
+            android:id="@+id/button19"
+            android:background="@drawable/levellocked"
+            android:textColor="@android:color/white"
+            android:textAlignment="center"
+            android:textSize="30dp"
+            android:layout_margin="5dp" />
+
+        <com.crocodile.myapplication.LevelButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="20"
+            android:padding="8dp"
+            android:id="@+id/button20"
+            android:background="@drawable/levellocked"
+            android:textColor="@android:color/white"
+            android:textAlignment="center"
+            android:textSize="30dp"
+            android:layout_margin="5dp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginRight="7dp"
+        android:layout_marginLeft="7dp">
+
+        <com.crocodile.myapplication.LevelButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="21"
+            android:padding="8dp"
+            android:id="@+id/button21"
+            android:background="@drawable/levellocked"
+            android:textColor="@android:color/white"
+            android:textAlignment="center"
+            android:textSize="30dp"
+            android:layout_margin="5dp" />
+
+        <com.crocodile.myapplication.LevelButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="22"
+            android:id="@+id/button22"
+            android:background="@drawable/levellocked"
+            android:textColor="@android:color/white"
+            android:textAlignment="center"
+            android:textSize="30dp"
+            android:layout_margin="5dp" />
+
+        <com.crocodile.myapplication.LevelButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="23"
+            android:padding="8dp"
+            android:id="@+id/button23"
+            android:background="@drawable/levellocked"
+            android:textColor="@android:color/white"
+            android:textAlignment="center"
+            android:textSize="30dp"
+            android:layout_margin="5dp" />
+
+        <com.crocodile.myapplication.LevelButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="24"
+            android:id="@+id/button24"
+            android:background="@drawable/levellocked"
+            android:textColor="@android:color/white"
+            android:textAlignment="center"
+            android:textSize="30dp"
+            android:layout_margin="5dp" />
+
+        <com.crocodile.myapplication.LevelButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="25"
+            android:padding="8dp"
+            android:id="@+id/button25"
+            android:background="@drawable/levellocked"
+            android:textColor="@android:color/white"
+            android:textAlignment="center"
+            android:textSize="30dp"
+            android:layout_margin="5dp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"/>
+
+</LinearLayout>
