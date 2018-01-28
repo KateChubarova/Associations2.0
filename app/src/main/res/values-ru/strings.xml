@@ -15,30 +15,42 @@
     <string name="new_game_question">Вы хотите начать новую игру?</string>
     <string name="new_game">Новая игра</string>
 
-    <string name="india">Индия</string>
-    <string name="france">Франция</string>
-    <string name="japan">Япония</string>
-    <string name="spain">Испания</string>
-    <string name="germany">Германия</string>
-    <string name="hawaii">Гавайи</string>
-    <string name="israel">Израиль</string>
-    <string name="latvia">Латвия</string>
-    <string name="turkey">Турция</string>
-    <string name="greece">Греция</string>
-    <string name="netherlands">Нидерланды</string>
-    <string name="italy">Италия</string>
-    <string name="mexico">Мексика</string>
-    <string name="moldova">Молдова</string>
-    <string name="slovakia">Словакия</string>
-    <string name="hungary">Венгрия</string>
-    <string name="lithuania">Литва</string>
-    <string name="portugal">Португалия</string>
-    <string name="malta">Мальта</string>
-    <string name="poland">Польша</string>
-    <string name="slovenia">Словения</string>
-    <string name="romania">Румыния</string>
-    <string name="ireland">Ирландия</string>
-    <string name="sweden">Швеция</string>
-    <string name="luxembourg">Люксембург</string>
+    <string name="check">Проверить</string>
+    <string name="level">Уровень</string>
+    <string name="new_level_available">Новый уровень открыт</string>
+    <string name="new_level">Новый уровень</string>
+    <string name="final_message">Поздравляем!!! Все уровни пройдены!
+    Начать сначала?</string>
+    <string name="next_level">Следующий уровень</string>
+    <string name="try_again">Попробуйте еще раз</string>
+    <string name="incorrect_answer">Ответ неврный</string>
+
+    <string-array name="countries">
+        <item>Индия</item>
+        <item>Франция</item>
+        <item>Япония</item>
+        <item>Испания</item>
+        <item>Германия</item>
+        <item>Гавайи</item>
+        <item>Израиль</item>
+        <item>Латвия</item>
+        <item>Турция</item>
+        <item>Греция</item>
+        <item>Нидерланды</item>
+        <item>Италия</item>
+        <item>Мексика</item>
+        <item>Молдова</item>
+        <item>Словакия</item>
+        <item>Венгрия</item>
+        <item>Литва</item>
+        <item>Португалия</item>
+        <item>Мальта</item>
+        <item>Польша</item>
+        <item>Словения</item>
+        <item>Румыния</item>
+        <item>Ирландия</item>
+        <item>Швеция</item>
+        <item>Люксембург</item>
+    </string-array>
 
 </resources>

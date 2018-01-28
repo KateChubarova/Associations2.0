@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="india">#e3b8d6</color>
+    <color name="france">#bce0f1</color>
+    <color name="japan">#f0d6bb</color>
+    <color name="spain">#aed9d2</color>
+    <color name="germany">#fed7ad</color>
+    <color name="hawaii">#f2ee8e</color>
+    <color name="israel">#78beb0</color>
+    <color name="latvia">#a2bfdb</color>
+    <color name="turkey">#ebe39b</color>
+    <color name="greece">#faeaac</color>
+    <color name="holland">#bbcf88</color>
+    <color name="italy">#faca9a</color>
+    <color name="mexico">#fed294</color>
+    <color name="moldova">#a9d2a7</color>
+    <color name="slovakia">#baddc9</color>
+    <color name="hungary">#fbc89c</color>
+    <color name="lithuania">#a4d5d4</color>
+    <color name="portugal">#add1a4</color>
+    <color name="malta">#f9e398</color>
+    <color name="poland">#a9d2a7</color>
+    <color name="slovenia">#aed9d2</color>
+    <color name="romania">#96cfe3</color>
+    <color name="ireland">#78beb0</color>
+    <color name="sweden">#f0bed9</color>
+    <color name="luxembourg">#c1e3e5</color>
+</resources>

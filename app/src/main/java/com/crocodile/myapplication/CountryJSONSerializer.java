@@ -2,6 +2,8 @@ package com.crocodile.myapplication;
 
 import android.content.Context;
 
+import com.crocodile.myapplication.model.Country;
+
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONTokener;
@@ -28,9 +30,10 @@ public class CountryJSONSerializer {
         this.fileName = fileName;
     }
 
-    public void saveCrimes (HashMap<Integer, Country> countries) throws JSONException, IOException {
+    public void saveCountries(HashMap<Integer, Country> countries) throws JSONException, IOException {
+
         JSONArray countryArray = new JSONArray();
-        for (int i=0; i<25; i++) {
+        for (int i = 0; i < 25; i++) {
             countryArray.put(countries.get(i).toJSON());
         }
         Writer writer = null;
@@ -39,10 +42,7 @@ public class CountryJSONSerializer {
             writer = new OutputStreamWriter(outputStream);
             writer.write(countryArray.toString());
 
-            System.out.println("All is ok in saveCrimes in CountryJSONSer");
-
         } catch (FileNotFoundException e){
-            System.out.println("Exception in countryJsonSer in method saveCrimes " + e);
         }
         finally {
             if (writer != null)
@@ -76,16 +76,15 @@ public class CountryJSONSerializer {
             countries = new HashMap<>();
             int count = 25;
             Country country;
-            for (int i=0; i<count; i++) {
+            for (int i = 0; i < count; i++) {
                 country = new Country();
 
-                if (i==0) {
+                if (i == 0) {
                     country.setIsOpen(Country.LEVEL_OPENED);
                 }
 
                 countries.put(i, country);
             }
-            System.out.println("Exception in countruJSONSer in method loadCount" + e);
         } finally {
             if (bufferedReader != null)
                 bufferedReader.close();

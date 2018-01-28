@@ -10,9 +10,9 @@ import android.view.View;
 import android.widget.TextView;
 
 
-import com.crocodile.myapplication.Country;
+import com.crocodile.myapplication.model.Country;
 import com.crocodile.myapplication.CountryLab;
-import com.crocodile.myapplication.LevelButton;
+import com.crocodile.myapplication.view.LevelButton;
 import com.crocodile.myapplication.R;
 
 import butterknife.ButterKnife;
@@ -74,9 +74,9 @@ public class LevelsActivity extends Activity {
         public void onClick(View view) {
             LevelButton button = (LevelButton) view;
             if (countryLab.getCountry(button.getIndex()).getIsOpen() != Country.LEVEL_CLOSED) {
-//                Intent i = new Intent(LevelsActivity.this, GameActivity.class);
-//                i.putExtra("level", Integer.toString(button.getIndex()));
-//                startActivityForResult(i, 1);
+                Intent intent = new Intent(LevelsActivity.this, GameActivity.class);
+                intent.putExtra(GameActivity.LEVEL, Integer.toString(button.getIndex()));
+                startActivity(intent);
             } else {
                 //dialog
             }
@@ -106,7 +106,7 @@ public class LevelsActivity extends Activity {
     }
 
     public void setLevels () {
-        for (int i=0; i<25; i++) {
+        for (int i = 0; i < 25; i++) {
             switch (countryLab.getCountry(i).isOpen()) {
                 case Country.LEVEL_CLOSED:
                     buttons[i].setBackgroundResource(R.drawable.levellocked);
@@ -124,5 +124,4 @@ public class LevelsActivity extends Activity {
             buttons[i].setOnClickListener(onClickListener);
         }
     }
-
 }

@@ -13,18 +13,16 @@ import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-
+import com.crocodile.myapplication.Preferences;
 import com.crocodile.myapplication.R;
 import com.crocodile.myapplication.Utils;
-
-import java.util.Locale;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 
-public class StartActivity extends Activity implements Animation.AnimationListener{
+public class StartActivity extends Activity implements Animation.AnimationListener {
 
     private static final String TAG = StartActivity.class.getName();
 
@@ -37,6 +35,8 @@ public class StartActivity extends Activity implements Animation.AnimationListen
 
     private Animation myAnimation;
     private Animation frogAnimation;
+
+    private Preferences preferences;
 
     @BindView(R.id.play)
     protected ImageView playButton;
@@ -64,57 +64,53 @@ public class StartActivity extends Activity implements Animation.AnimationListen
         frogAnimation = AnimationUtils.loadAnimation(StartActivity.this, R.anim.rotate);
         frogAnimation.setAnimationListener(StartActivity.this);
 
-        Typeface face = Typeface.createFromAsset(getAssets(), getString(R.string.roboto_head));
-        ((TextView)findViewById(R.id.appName)).setTypeface(face);
+        preferences = new Preferences(this);
 
-        Locale current = getResources().getConfiguration().locale;
-        switch (current.getCountry().toLowerCase()) {
-            case "ru":
-                selectRussian();
-                break;
-            case "us":
-                selectEnglish();
-                break;
-        }
+        Typeface face = Typeface.createFromAsset(getAssets(), getString(R.string.roboto_head));
+        ((TextView) findViewById(R.id.appName)).setTypeface(face);
+
+        setLanguage();
     }
 
     @OnClick(R.id.play)
-    protected void play(){
+    protected void play() {
         animationIndex = ANIMATION_INDEX_NEW_INTENT;
         myAnimation.setAnimationListener(StartActivity.this);
         playButton.startAnimation(myAnimation);
     }
 
     @OnClick(R.id.frog)
-    protected void frog(){
+    protected void frog() {
         animationIndex = ANIMATION_INDEX_ROTATE_FROG;
         frogButton.startAnimation(frogAnimation);
     }
 
     @OnClick(R.id.rate)
-    protected void rate(){
+    protected void rate() {
         animationIndex = ANIMATION_INDEX_GO_TO_MARKET;
         rateButton.startAnimation(myAnimation);
     }
 
     @OnClick(R.id.help)
-    protected void help(){
+    protected void help() {
         animationIndex = ANIMATION_INDEX_CHANGE_LANGUAGE;
         helpButton.startAnimation(myAnimation);
     }
 
     @OnClick(R.id.start_eng)
-    public void selectEnglish(){
+    public void selectEnglish() {
         english.setSelected(true);
         russian.setSelected(false);
         Utils.changeLanguage(this, "us");
+        preferences.saveLanguage("us");
     }
 
     @OnClick(R.id.start_rus)
-    public void selectRussian(){
+    public void selectRussian() {
         english.setSelected(false);
         russian.setSelected(true);
         Utils.changeLanguage(this, "ru");
+        preferences.saveLanguage("ru");
     }
 
     @Override
@@ -126,8 +122,15 @@ public class StartActivity extends Activity implements Animation.AnimationListen
     public void onAnimationEnd(Animation animation) {
         switch (animationIndex) {
             case ANIMATION_INDEX_NEW_INTENT:
-                Intent i = new Intent(StartActivity.this, LevelsActivity.class);
-                startActivity(i);
+                if (preferences.isFirstTimeLaunch()) {
+                    Intent intent = new Intent(StartActivity.this, GameActivity.class);
+                    intent.putExtra(GameActivity.LEVEL, 1);
+                    startActivity(intent);
+                } else {
+                    preferences.saveIsFirstTimeLaunch();
+                    Intent intent = new Intent(StartActivity.this, LevelsActivity.class);
+                    startActivity(intent);
+                }
                 break;
             case ANIMATION_INDEX_GO_TO_MARKET:
                 Uri uri = Uri.parse("market://details?id=" + getPackageName());
@@ -160,7 +163,7 @@ public class StartActivity extends Activity implements Animation.AnimationListen
     }
 
     @Override
-    public  void onBackPressed() {
+    public void onBackPressed() {
         AlertDialog.Builder quitDialog = new AlertDialog.Builder(
                 StartActivity.this);
         quitDialog.setTitle(R.string.exit).setPositiveButton(R.string.yes, new DialogInterface.OnClickListener() {
@@ -175,6 +178,24 @@ public class StartActivity extends Activity implements Animation.AnimationListen
             }
         });
         quitDialog.show();
+    }
+
+    private void setLanguage() {
+        String language;
+        if (preferences.isFirstTimeLaunch()) {
+            language = getResources().getConfiguration().locale.getCountry().toLowerCase();
+            preferences.saveLanguage(language);
+        } else {
+            language = preferences.getLanguage();
+        }
+        switch (language) {
+            case "ru":
+                selectRussian();
+                break;
+            case "us":
+                selectEnglish();
+                break;
+        }
     }
 
 }
